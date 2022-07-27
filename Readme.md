@@ -7,7 +7,7 @@
 
 
 
-## Project 10 [Live Link]()
+## > Project 10 [Live Link](interiordesign)
 
 - >  Skills Gained in this project
     -   Learned to use `background-image` with `lienar-gradient`.
