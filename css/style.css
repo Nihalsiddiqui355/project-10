@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.418), rgba(0, 0, 0, 0.445)), url("../image/1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    color: aliceblue;
+    font-family: "Poppins", sans-serif;
+}
+
+/* navbar____________ */
+
+div img[src="./image/white-logo.png"]{
+    /* border: 2px solid salmon; */
+    position: absolute;
+    left: 70px;
+    top: 40px;
+    height: 50px;
+}
+
+.nav-lists {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 909px;
+    height: 90px;
+    position: absolute;
+    left: 370px;
+    top: 15px;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-list p:nth-child(1) {
+    position: absolute;
+    top: 21px;
+}
+
+.nav-list p:nth-child(2) {
+    position: relative;
+    top: 10px;
+}
+
+.phone {
+    /* border: 2px solid red; */
+    position: relative;
+    right: -60px;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    top: 130px;
+    height: 460px;
+}
+
+.left {
+    width: auto;
+    height: auto;
+    position: relative;
+}
+
+.left h1 {
+    font-size: 65px;
+    position: relative;
+    left: 60px;
+}
+
+.left .btn {
+    border: 2px solid #fff;
+    height: 55px;
+    width: 200px;
+    position: relative;
+    left: 60px;
+    border-radius: 30px;
+    background-color: transparent;
+    color: #fff;
+}
+
+.right {
+    height: 300px;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.box-1 {
+    /* Bulbe */
+    position: relative;
+    top: 255px;
+    left: -100px;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px 0px 0px 20px;
+}
+
+
+.box-2 {
+    /* We create puzzle */
+    position: relative;
+    left: -85px;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.202);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+.box-2::after {
+    /* We create puzzle */
+    content: '';
+    background: #fff;
+    position: relative;
+    /* top: 111px; */
+    top: 111px;
+    left: -100px;
+    width: 3px;
+    height: 98px;
+    height: 103px;
+
+}
+
+.box-1::before {
+    /* Bulbe */
+    content: '';
+    background: #fff;
+    position: relative;
+    left: 230px;
+    top: 55px;
+    width: 115px;
+    height: 2px;
+    display: flex;
+}
+
+.circle-1 {
+    /* We create puzzle */
+    height: 25px;
+    width: 25px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    right: 284px;
+    /* top: 225px; */
+    top: 215px;
+    border-radius: 25px;
+}
+
+.circle-2 {
+    
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    background-color: #fff;
+    top: 308px;
+    right: 408px;
+    border-radius: 25px;
+}
+
+.bgc{
+    /* border: 2px solid red; */
+    background-color: #fff;
+    color: black;
+    height: 35px;
+    border-radius: 20px;
+    width: 58px;
+    padding: 7px 0px 0px 15px;
+}
