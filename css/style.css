@@ -5,6 +5,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+
 }
 
 body {
@@ -23,8 +24,51 @@ body {
 div img[src="./image/white-logo.png"] {
     position: absolute;
     left: 70px;
-    top: 40px;
+    top: 30px;
     height: 50px;
+}
+
+@media screen and (max-width:840px) {
+
+    div img[src="./image/white-logo.png"] {
+        position: absolute;
+        top: 15px;
+
+    }
+
+    body {
+        overflow-x: hidden;
+        margin: 0 auto;
+        height: 1042px;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.418), rgba(0, 0, 0, 0.445)), url("../image/1.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 1000px;
+        width: 412px;
+        color: rgb(255, 255, 255);
+    }
+
+    .bar {
+        float: right;
+        position: relative;
+        right: -90px;
+        font-size: 35px;
+        margin-top: 20px;
+
+    }
+
+    .nav-line {
+        display: none;
+    }
+
+    .nav-lists {
+        display: none;
+    }
+
+    .nav-list {
+        display: none;
+    }
 }
 
 .nav-line {
@@ -88,6 +132,62 @@ div img[src="./image/white-logo.png"] {
     left: 60px;
 }
 
+@media screen and (max-width:840px) {
+
+    .left {
+        /* border: 2px solid red; */
+
+        margin: 0 auto;
+        max-height: 200px;
+        min-width: 305px;
+        position: relative;
+        left: -190px;
+        top: 200px;
+
+    }
+
+    .left h1 {
+        font-size: 40px;
+    }
+
+    .left .btn {
+        height: 25px;
+        width: 100px;
+    }
+
+    .nav-lists {
+        display: none;
+    }
+
+    .box-1 {
+
+        width: 252px;
+        position: relative;
+        top: 700px;
+        left: -453px;
+
+    }
+
+    .circle-1 {
+        /* border: 2px solid red; */
+        position: relative;
+        top: 390px;
+        left: -185px
+    }
+
+    .circle-2 {
+        position: relative;
+        top: 630px;
+        left: -345px
+    }
+
+    .box-2 {
+        position: relative;
+        left: -50px;
+        top: 50px;
+    }
+}
+
 .left .btn {
     border: 2px solid #fff;
     height: 55px;
@@ -110,19 +210,47 @@ div img[src="./image/white-logo.png"] {
 
 .box-1 {
     /* Bulbe */
-    position: relative;
-    top: 255px;
-    left: -100px;
-    width: 250px;
     background-color: rgba(255, 255, 255, 0.2);
     padding: 10px 0px 0px 20px;
+}
+
+@media screen and (min-width:841px) {
+    .bar {
+        display: none;
+    }
+
+    .box-1 {
+        /* Bulbe */
+        position: relative;
+        top: 255px;
+        left: -100px;
+        width: 250px;
+        background-color: rgba(255, 255, 255, 0.2);
+        padding: 10px 0px 0px 20px;
+    }
+
+    .box-2 {
+        position: relative;
+        left: -83px;
+    }
+
+    .circle-1 {
+        position: absolute;
+        right: 284px;
+        top: 215px;
+    }
+
+    .circle-2 {
+        position: absolute;
+        top: 308px;
+        right: 408px;
+    }
+
 }
 
 
 .box-2 {
     /* We create puzzle */
-    position: relative;
-    left: -85px;
     width: 250px;
     background-color: rgba(255, 255, 255, 0.202);
     display: flex;
@@ -162,21 +290,17 @@ div img[src="./image/white-logo.png"] {
     height: 25px;
     width: 25px;
     background-color: rgb(255, 255, 255);
-    position: absolute;
-    right: 284px;
-    /* top: 225px; */
-    top: 215px;
+
     border-radius: 25px;
 }
 
 .circle-2 {
 
-    position: absolute;
+
     height: 25px;
     width: 25px;
     background-color: #fff;
-    top: 308px;
-    right: 408px;
+
     border-radius: 25px;
 }
 
