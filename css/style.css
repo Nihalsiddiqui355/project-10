@@ -28,7 +28,7 @@ div img[src="./image/white-logo.png"] {
     height: 50px;
 }
 
-@media screen and (max-width:840px) {
+@media screen and (max-width:380px) {
 
     div img[src="./image/white-logo.png"] {
         position: absolute;
@@ -132,7 +132,7 @@ div img[src="./image/white-logo.png"] {
     left: 60px;
 }
 
-@media screen and (max-width:840px) {
+@media screen and (max-width:380px) {
 
     .left {
         /* border: 2px solid red; */
