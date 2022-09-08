@@ -8,16 +8,19 @@
 
 }
 
-body {
+.container {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.418), rgba(0, 0, 0, 0.445)), url("../image/1.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 100vh;
-    width: 100%;
     color: rgb(255, 255, 255);
     font-family: "Poppins", sans-serif;
+    overflow: hidden;
+    min-width: 80rem;
+    margin: 0 auto;
 }
+
 
 /* navbar____________ */
 
@@ -28,48 +31,7 @@ div img[src="./image/white-logo.png"] {
     height: 50px;
 }
 
-@media screen and (max-width:480px) {
 
-    div img[src="./image/white-logo.png"] {
-        position: absolute;
-        top: 15px;
-
-    }
-
-    body {
-        overflow-x: hidden;
-        margin: 0 auto;
-        height: 1042px;
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.418), rgba(0, 0, 0, 0.445)), url("../image/1.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        height: 1000px;
-        width: 412px;
-        color: rgb(255, 255, 255);
-    }
-
-    .bar {
-        float: right;
-        position: relative;
-        right: -90px;
-        font-size: 35px;
-        margin-top: 20px;
-
-    }
-
-    .nav-line {
-        display: none;
-    }
-
-    .nav-lists {
-        display: none;
-    }
-
-    .nav-list {
-        display: none;
-    }
-}
 
 .nav-line {
     height: 1px;
@@ -132,7 +94,49 @@ div img[src="./image/white-logo.png"] {
     left: 60px;
 }
 
-@media screen and (max-width:480px) {
+@media (min-width:375px) and (max-width:886px) {
+
+    div img[src="./image/white-logo.png"] {
+        position: absolute;
+        top: 15px;
+
+    }
+
+    .container {
+        overflow-y: scroll;
+        overflow-x: hidden;
+        margin: 0 auto;
+        /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.418), rgba(0, 0, 0, 0.445)), url("../image/1.jpg"); */
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        min-width: 375px;
+        scroll-behavior: smooth;
+    }
+
+    .bar {
+        float: right;
+        position: relative;
+        right: -90px;
+        font-size: 35px;
+        margin-top: 20px;
+
+    }
+
+    .nav-line {
+        display: none;
+    }
+
+    .nav-lists {
+        display: none;
+    }
+
+    .nav-list {
+        display: none;
+    }
+}
+
+@media (min-width:375px) and (max-width:886px) {
 
     .left {
         /* border: 2px solid red; */
@@ -141,13 +145,14 @@ div img[src="./image/white-logo.png"] {
         max-height: 200px;
         min-width: 305px;
         position: relative;
-        left: -190px;
-        top: 200px;
+        top: 40px;
 
     }
 
     .left h1 {
-        font-size: 40px;
+        font-size: 34px;
+        margin: 0 auto;
+
     }
 
     .left .btn {
@@ -161,30 +166,32 @@ div img[src="./image/white-logo.png"] {
 
     .box-1 {
 
+        margin: 0 auto;
         width: 252px;
         position: relative;
-        top: 700px;
-        left: -453px;
+        top: 705px;
+        left: -200px;
 
     }
 
     .circle-1 {
         /* border: 2px solid red; */
         position: relative;
-        top: 390px;
-        left: -185px
+        top: 36.5rem;
+        left: -13.5em
     }
 
     .circle-2 {
         position: relative;
-        top: 630px;
-        left: -345px
+        top: 634px;
+        left: -90px
     }
 
     .box-2 {
         position: relative;
-        left: -50px;
-        top: 50px;
+        left: -5rem;
+        margin: 0 auto;
+        top: 245px;
     }
 }
 
@@ -214,7 +221,8 @@ div img[src="./image/white-logo.png"] {
     padding: 10px 0px 0px 20px;
 }
 
-@media screen and (min-width: 576px) {
+@media (min-width:841px) {
+
     .bar {
         display: none;
     }
@@ -222,8 +230,8 @@ div img[src="./image/white-logo.png"] {
     .box-1 {
         /* Bulbe */
         position: relative;
-        top: 255px;
-        left: -100px;
+        top: 270px;
+        left: -150px;
         width: 250px;
         background-color: rgba(255, 255, 255, 0.2);
         padding: 10px 0px 0px 20px;
@@ -231,7 +239,7 @@ div img[src="./image/white-logo.png"] {
 
     .box-2 {
         position: relative;
-        left: -83px;
+        left: -107px;
     }
 
     .circle-1 {
@@ -242,7 +250,7 @@ div img[src="./image/white-logo.png"] {
 
     .circle-2 {
         position: absolute;
-        top: 308px;
+        top: 320px;
         right: 408px;
     }
 
